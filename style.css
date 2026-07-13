@@ -22,9 +22,7 @@ section {
 }
 
 header {
-  /* position: absolute; */
   width: 100%;
-  /* top: 0; */
 }
 
 .left {
@@ -152,7 +150,7 @@ button:hover {
 }
 
 .text-left {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-style: SemiBold;
   font-size: 16px;
@@ -165,7 +163,7 @@ button:hover {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-style: Bold;
-  font-size: 64px;
+  font-size: clamp(2rem, 6vw, 4rem);
   line-height: 100%;
   letter-spacing: 0%;
   color: #ffffff;
@@ -320,6 +318,9 @@ footer {
   input:checked ~ .right-nav {
     right: 0;
   }
+  .title-left {
+    font-size: 1vw;
+  }
 }
 
 @media (max-width: 650px) {
@@ -342,15 +343,22 @@ footer {
 
 @media (max-width: 500px) {
   .title-left {
-    font-size: 55px;
+    font-size: 10vw;
   }
 
-  .text-left {
-    font-size: 12px;
+  .title-left span {
+    font-size: 10vw;
   }
 
   .article {
-    font-size: 12px;
+    font-size: 2vw;
     margin-top: 10px;
+  }
+
+  .right-box img {
+    width: 87vw;
+  }
+  .blur {
+    width: 100%;
   }
 }
